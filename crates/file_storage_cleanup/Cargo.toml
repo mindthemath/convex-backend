@@ -1,0 +1,28 @@
+[package]
+name = "file_storage_cleanup"
+version = "0.1.0"
+edition = "2021"
+license = "LicenseRef-FSL-1.1-Apache-2.0"
+
+[[bin]]
+name = "file-storage-cleanup"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true }
+cmd_util = { path = "../cmd_util" }
+common = { path = "../common" }
+db_connection = { path = "../db_connection" }
+runtime = { path = "../runtime" }
+search = { path = "../search" }
+database = { path = "../database" }
+model = { path = "../model" }
+application = { path = "../application" }
+aws_utils = { path = "../aws_utils" }
+aws_s3 = { path = "../aws_s3" }
+storage = { path = "../storage" }
+walkdir = { workspace = true }
+tracing = { workspace = true }
+async-trait = { workspace = true }
+futures = { workspace = true }
